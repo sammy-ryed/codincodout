@@ -1,0 +1,14 @@
+import java.util.*;
+class TemperaturConversion {
+public static void main(String[] args){
+	
+	Scanner sc= new Scanner(System.in);
+	
+	System.out.println("Enter Temperatur in Celsius");
+	int TempInCelsius=sc.nextInt();
+	
+	double TempInFahrenheit = (TempInCelsius*1.8)+32;
+		
+	System.out.println("The "+TempInCelsius+" celsius is "+TempInFahrenheit+" fahrenheit ");
+	sc.close();
+}}
