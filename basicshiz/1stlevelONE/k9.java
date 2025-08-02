@@ -1,8 +1,0 @@
-import java.util.*;
-class k9{
-public static void main(String[] args){
-Scanner sc= new Scanner (System.in);
-String s=sc.nextLine();
-System.out.println(s);
-sc.close();
-}}
