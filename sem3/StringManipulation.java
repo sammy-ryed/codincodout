@@ -1,4 +1,4 @@
-package sem2;
+package sem3;
 
 public class StringManipulation {
     
