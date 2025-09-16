@@ -3,7 +3,6 @@ package com.example.kingdom;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
 public class WizardTower {
     private final int maxSpellCapacity;
