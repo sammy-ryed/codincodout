@@ -1,0 +1,17 @@
+
+UML OBJECT DIAGRAM - STUDENT TEACHER RELATIONSHIP
+
+Objects:
+teacher1:Teacher { name = "Mr. Ravi" }
+teacher2:Teacher { name = "Ms. Priya" }
+
+student1:Student { name = "Karthik" }
+student2:Student { name = "Asha" }
+student3:Student { name = "Vijay" }
+student4:Student { name = "Divya" }
+
+Links:
+teacher1 -- student1
+teacher1 -- student2
+teacher2 -- student3
+teacher2 -- student4

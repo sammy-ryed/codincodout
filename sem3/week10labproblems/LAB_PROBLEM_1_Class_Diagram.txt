@@ -1,0 +1,19 @@
+
+UML CLASS DIAGRAM - LIBRARY MANAGEMENT SYSTEM
+
+Classes:
+1. Book
+   - Attributes: title, author, ISBN
+   - Methods: issueBook(), returnBook()
+
+2. Member
+   - Attributes: memberID, name
+   - Methods: borrowBook(), returnBook()
+
+3. Librarian
+   - Attributes: employeeID, name
+   - Methods: addBook(), removeBook(), manageMembers()
+
+Relationships:
+- Member 1 --- * Book  (Association: A member can borrow many books)
+- Librarian --- Book (Aggregation: Librarian manages a collection of books)

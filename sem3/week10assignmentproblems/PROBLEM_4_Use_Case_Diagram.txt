@@ -1,0 +1,22 @@
+
+UML USE CASE DIAGRAM - HOSPITAL MANAGEMENT SYSTEM
+
+Actors:
+- Admin
+- Doctor
+- Patient
+
+Use Cases:
+1. Manage Appointments
+2. Update Records
+3. Generate Bills
+
+Relationships:
+- Admin --> Manage Appointments
+- Doctor --> Update Records
+- Patient --> Manage Appointments
+- Admin --> Generate Bills
+
+Include/Extend:
+- Generate Bills <<include>> Update Records (as billing depends on updated records)
+- Manage Appointments <<extend>> Update Records (when rescheduling)

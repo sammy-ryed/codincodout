@@ -1,0 +1,13 @@
+
+UML SEQUENCE DIAGRAM - ONLINE ORDER PROCESS
+
+Actors/Objects:
+Customer, OrderService, PaymentGateway, InventoryService
+
+Flow:
+1. Customer -> OrderService: placeOrder()
+2. OrderService -> InventoryService: checkAvailability()
+3. InventoryService -> OrderService: availabilityStatus()
+4. OrderService -> PaymentGateway: processPayment()
+5. PaymentGateway -> OrderService: paymentConfirmation()
+6. OrderService -> Customer: orderConfirmation()

@@ -1,0 +1,30 @@
+
+UML CLASS DIAGRAM - BANK ACCOUNT SYSTEM
+
+Classes:
+
+1. Bank
+   + bankName: String
+   + branchCode: String
+   + customers: List<Customer>
+   + addCustomer(c: Customer): void
+   + removeCustomer(c: Customer): void
+
+2. Customer
+   + customerID: int
+   + name: String
+   + address: String
+   + accounts: List<Account>
+   + openAccount(a: Account): void
+   + closeAccount(a: Account): void
+
+3. Account
+   # accountNumber: int
+   - balance: double
+   + deposit(amount: double): void
+   + withdraw(amount: double): void
+   + getBalance(): double
+
+Relationships:
+- Bank 1 --- * Customer  (Association: Bank has many customers)
+- Customer 1 --- * Account  (Aggregation: Customer owns one or more accounts)

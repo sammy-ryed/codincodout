@@ -1,0 +1,13 @@
+
+UML SEQUENCE DIAGRAM - ONLINE SHOPPING SYSTEM
+
+Actors/Objects:
+Customer, Cart, PaymentService, OrderService
+
+Flow:
+1. Customer -> Cart: addItem(productID)
+2. Cart -> Customer: itemAddedConfirmation()
+3. Customer -> PaymentService: makePayment(amount)
+4. PaymentService -> Customer: paymentStatus(success)
+5. Customer -> OrderService: confirmOrder()
+6. OrderService -> Customer: orderConfirmation()

@@ -1,0 +1,17 @@
+
+UML USE CASE DIAGRAM - ATM SYSTEM
+
+Actors:
+- User
+
+Use Cases:
+1. Withdraw Money
+2. Check Balance
+3. Deposit Money
+
+Relationships:
+- User --> Withdraw Money
+- User --> Check Balance
+- User --> Deposit Money
+
+(Optionally: Include relationship between "Withdraw Money" and "Check Balance" for balance verification)

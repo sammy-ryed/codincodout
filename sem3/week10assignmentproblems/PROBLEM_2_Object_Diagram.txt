@@ -1,0 +1,17 @@
+
+UML OBJECT DIAGRAM - BANK ACCOUNT SYSTEM (RUNTIME INSTANCES)
+
+Objects:
+bank1:Bank { bankName = "State Bank", branchCode = "SBI001" }
+
+cust1:Customer { name = "Rahul", customerID = 101 }
+cust2:Customer { name = "Neha", customerID = 102 }
+
+acc1:Account { accountNumber = 1111, balance = 5000 }
+acc2:Account { accountNumber = 2222, balance = 10000 }
+
+Links:
+bank1 -- cust1
+bank1 -- cust2
+cust1 -- acc1
+cust2 -- acc2
